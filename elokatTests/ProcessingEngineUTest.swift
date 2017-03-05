@@ -1,15 +1,15 @@
 //
-//  elokatTests.swift
-//  elokatTests
+//  MainViewUTest.swift
+//  elokat
 //
-//  Created by Mike Chinaloy on 05/02/2017.
+//  Created by Mike Chinaloy on 05/03/2017.
 //  Copyright © 2017 elokat. All rights reserved.
 //
 
 import XCTest
 @testable import elokat
 
-class elokatTests: XCTestCase {
+class MainViewUTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,7 +21,7 @@ class elokatTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func processingEngineMatchesInputString() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
