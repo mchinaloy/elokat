@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6D1A50781E6C3A6F00AA55FB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A50771E6C3A6F00AA55FB /* MainController.swift */; };
-		6D1A507A1E6C406C00AA55FB /* CoreIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A50791E6C406C00AA55FB /* CoreIntents.swift */; };
-		6D1A507C1E6C426600AA55FB /* SpeechEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A507B1E6C426600AA55FB /* SpeechEngine.swift */; };
+		6D1A507A1E6C406C00AA55FB /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A50791E6C406C00AA55FB /* Vocabulary.swift */; };
+		6D1A507C1E6C426600AA55FB /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A507B1E6C426600AA55FB /* SpeechService.swift */; };
 		6D1A50811E6C43E500AA55FB /* ProcessingEngineUTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A50801E6C43E500AA55FB /* ProcessingEngineUTest.swift */; };
-		6D1A50911E6C490600AA55FB /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A50901E6C490600AA55FB /* SpeechService.swift */; };
+		6D1A50911E6C490600AA55FB /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1A50901E6C490600AA55FB /* SpeechSynthesizer.swift */; };
 		6D1A50941E6C842000AA55FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1A50931E6C842000AA55FB /* AVFoundation.framework */; };
 		6D7AA08A1E47649E0050F200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7AA0891E47649E0050F200 /* AppDelegate.swift */; };
 		6D7AA08C1E47649E0050F200 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7AA08B1E47649E0050F200 /* MainView.swift */; };
 		6D7AA08F1E47649E0050F200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7AA08D1E47649E0050F200 /* Main.storyboard */; };
 		6D7AA0911E47649E0050F200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7AA0901E47649E0050F200 /* Assets.xcassets */; };
 		6D7AA0941E47649E0050F200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7AA0921E47649E0050F200 /* LaunchScreen.storyboard */; };
+		6DF970321E7591F10050F0B9 /* NLEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF970311E7591F10050F0B9 /* NLEngine.swift */; };
+		6DF970341E75954E0050F0B9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF970331E75954E0050F0B9 /* Context.swift */; };
+		6DF970361E759A1A0050F0B9 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF970351E759A1A0050F0B9 /* Emotion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +35,10 @@
 
 /* Begin PBXFileReference section */
 		6D1A50771E6C3A6F00AA55FB /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		6D1A50791E6C406C00AA55FB /* CoreIntents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreIntents.swift; sourceTree = "<group>"; };
-		6D1A507B1E6C426600AA55FB /* SpeechEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechEngine.swift; sourceTree = "<group>"; };
+		6D1A50791E6C406C00AA55FB /* Vocabulary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
+		6D1A507B1E6C426600AA55FB /* SpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		6D1A50801E6C43E500AA55FB /* ProcessingEngineUTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessingEngineUTest.swift; sourceTree = "<group>"; };
-		6D1A50901E6C490600AA55FB /* SpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		6D1A50901E6C490600AA55FB /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
 		6D1A50931E6C842000AA55FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6D7AA0861E47649E0050F200 /* elokat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elokat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7AA0891E47649E0050F200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +49,9 @@
 		6D7AA0951E47649E0050F200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7AA09A1E47649E0050F200 /* elokatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = elokatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7AA0A01E47649E0050F200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF970311E7591F10050F0B9 /* NLEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLEngine.swift; sourceTree = "<group>"; };
+		6DF970331E75954E0050F0B9 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		6DF970351E759A1A0050F0B9 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +84,12 @@
 		6D1A507D1E6C426D00AA55FB /* model */ = {
 			isa = PBXGroup;
 			children = (
-				6D1A50791E6C406C00AA55FB /* CoreIntents.swift */,
-				6D1A507B1E6C426600AA55FB /* SpeechEngine.swift */,
-				6D1A50901E6C490600AA55FB /* SpeechService.swift */,
+				6D1A50791E6C406C00AA55FB /* Vocabulary.swift */,
+				6D1A507B1E6C426600AA55FB /* SpeechService.swift */,
+				6D1A50901E6C490600AA55FB /* SpeechSynthesizer.swift */,
+				6DF970311E7591F10050F0B9 /* NLEngine.swift */,
+				6DF970331E75954E0050F0B9 /* Context.swift */,
+				6DF970351E759A1A0050F0B9 /* Emotion.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -248,12 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D1A507C1E6C426600AA55FB /* SpeechEngine.swift in Sources */,
+				6D1A507C1E6C426600AA55FB /* SpeechService.swift in Sources */,
 				6D7AA08C1E47649E0050F200 /* MainView.swift in Sources */,
-				6D1A507A1E6C406C00AA55FB /* CoreIntents.swift in Sources */,
+				6D1A507A1E6C406C00AA55FB /* Vocabulary.swift in Sources */,
 				6D1A50781E6C3A6F00AA55FB /* MainController.swift in Sources */,
 				6D7AA08A1E47649E0050F200 /* AppDelegate.swift in Sources */,
-				6D1A50911E6C490600AA55FB /* SpeechService.swift in Sources */,
+				6DF970361E759A1A0050F0B9 /* Emotion.swift in Sources */,
+				6DF970341E75954E0050F0B9 /* Context.swift in Sources */,
+				6D1A50911E6C490600AA55FB /* SpeechSynthesizer.swift in Sources */,
+				6DF970321E7591F10050F0B9 /* NLEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

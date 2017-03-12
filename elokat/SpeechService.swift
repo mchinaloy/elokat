@@ -1,5 +1,5 @@
 //
-//  SpeechService.swift
+//  ProcessingEngine.swift
 //  elokat
 //
 //  Created by Mike Chinaloy on 05/03/2017.
@@ -7,22 +7,25 @@
 //
 
 import Foundation
-import Speech
+import AVFoundation
 
-class SpeechService: NSObject, AVSpeechSynthesizerDelegate {
+class SpeechService {
     
-    private let synth = AVSpeechSynthesizer()
+    private let nlEngine = NLEngine()
+    private let vocabulary = Vocabulary()
+    private let speechSynthesizer = SpeechSynthesizer()
     
-    func speak(text: String) {
-        if !synth.isSpeaking {
-            print("Speaking \(text)")
-            let myUtterance = AVSpeechUtterance(string: text)
-            print(AVSpeechSynthesisVoice.speechVoices())
-            myUtterance.rate = 0.5
-            synth.speak(myUtterance)
-        } else {
-            print("Already speaking, ignoring input")
-            synth.continueSpeaking()
+    public func process(text: String, audioSession: AVAudioSession) {
+        print("Attempting to match \(text)")
+        var intentMatched = false
+        if let response = vocabulary.intents[text.lowercased()] {
+            intentMatched = true
+            speechSynthesizer.speak(text: response, audioSession: audioSession)
+        }
+        
+        if(!intentMatched) {
+            let response = nlEngine.getResponse(input: text)
+            speechSynthesizer.speak(text: response, audioSession: audioSession)
         }
     }
     
