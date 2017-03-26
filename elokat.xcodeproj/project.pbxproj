@@ -18,9 +18,19 @@
 		6D7AA08F1E47649E0050F200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7AA08D1E47649E0050F200 /* Main.storyboard */; };
 		6D7AA0911E47649E0050F200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7AA0901E47649E0050F200 /* Assets.xcassets */; };
 		6D7AA0941E47649E0050F200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7AA0921E47649E0050F200 /* LaunchScreen.storyboard */; };
-		6DF970321E7591F10050F0B9 /* NLEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF970311E7591F10050F0B9 /* NLEngine.swift */; };
-		6DF970341E75954E0050F0B9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF970331E75954E0050F0B9 /* Context.swift */; };
-		6DF970361E759A1A0050F0B9 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF970351E759A1A0050F0B9 /* Emotion.swift */; };
+		6DF160E61E7EF70B005614AA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF970371E7EB8450050F0B9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DF970381E7EB8450050F0B9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF970371E7EB8450050F0B9 /* Alamofire.framework */; };
+		6DF9703A1E7EC7B30050F0B9 /* LanguageEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF970391E7EC7B30050F0B9 /* LanguageEngine.swift */; };
+		6DF9703C1E7EC82F0050F0B9 /* AwsLanguageEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF9703B1E7EC82F0050F0B9 /* AwsLanguageEngine.swift */; };
+		6DF9703E1E7ED5AF0050F0B9 /* SpeechEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF9703D1E7ED5AF0050F0B9 /* SpeechEvaluator.swift */; };
+		6DF970511E7EF3210050F0B9 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9704D1E7EF3210050F0B9 /* AWSCognito.framework */; };
+		6DF970521E7EF3210050F0B9 /* AWSCognito.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9704D1E7EF3210050F0B9 /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DF970531E7EF3210050F0B9 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9704E1E7EF3210050F0B9 /* AWSCore.framework */; };
+		6DF970541E7EF3210050F0B9 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9704E1E7EF3210050F0B9 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DF970551E7EF3210050F0B9 /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9704F1E7EF3210050F0B9 /* AWSMachineLearning.framework */; };
+		6DF970561E7EF3210050F0B9 /* AWSMachineLearning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF9704F1E7EF3210050F0B9 /* AWSMachineLearning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DF970571E7EF3210050F0B9 /* AWSPolly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF970501E7EF3210050F0B9 /* AWSPolly.framework */; };
+		6DF970581E7EF3210050F0B9 /* AWSPolly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF970501E7EF3210050F0B9 /* AWSPolly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +42,24 @@
 			remoteInfo = elokat;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DF970591E7EF3210050F0B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DF160E61E7EF70B005614AA /* Alamofire.framework in Embed Frameworks */,
+				6DF970521E7EF3210050F0B9 /* AWSCognito.framework in Embed Frameworks */,
+				6DF970581E7EF3210050F0B9 /* AWSPolly.framework in Embed Frameworks */,
+				6DF970561E7EF3210050F0B9 /* AWSMachineLearning.framework in Embed Frameworks */,
+				6DF970541E7EF3210050F0B9 /* AWSCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6D1A50771E6C3A6F00AA55FB /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -49,9 +77,14 @@
 		6D7AA0951E47649E0050F200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7AA09A1E47649E0050F200 /* elokatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = elokatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7AA0A01E47649E0050F200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DF970311E7591F10050F0B9 /* NLEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLEngine.swift; sourceTree = "<group>"; };
-		6DF970331E75954E0050F0B9 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
-		6DF970351E759A1A0050F0B9 /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		6DF970371E7EB8450050F0B9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		6DF970391E7EC7B30050F0B9 /* LanguageEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageEngine.swift; sourceTree = "<group>"; };
+		6DF9703B1E7EC82F0050F0B9 /* AwsLanguageEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwsLanguageEngine.swift; sourceTree = "<group>"; };
+		6DF9703D1E7ED5AF0050F0B9 /* SpeechEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechEvaluator.swift; sourceTree = "<group>"; };
+		6DF9704D1E7EF3210050F0B9 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = Carthage/Build/iOS/AWSCognito.framework; sourceTree = "<group>"; };
+		6DF9704E1E7EF3210050F0B9 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Carthage/Build/iOS/AWSCore.framework; sourceTree = "<group>"; };
+		6DF9704F1E7EF3210050F0B9 /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMachineLearning.framework; path = Carthage/Build/iOS/AWSMachineLearning.framework; sourceTree = "<group>"; };
+		6DF970501E7EF3210050F0B9 /* AWSPolly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSPolly.framework; path = Carthage/Build/iOS/AWSPolly.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF970511E7EF3210050F0B9 /* AWSCognito.framework in Frameworks */,
+				6DF970531E7EF3210050F0B9 /* AWSCore.framework in Frameworks */,
+				6DF970381E7EB8450050F0B9 /* Alamofire.framework in Frameworks */,
+				6DF970551E7EF3210050F0B9 /* AWSMachineLearning.framework in Frameworks */,
 				6D1A50941E6C842000AA55FB /* AVFoundation.framework in Frameworks */,
+				6DF970571E7EF3210050F0B9 /* AWSPolly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +125,9 @@
 				6D1A50791E6C406C00AA55FB /* Vocabulary.swift */,
 				6D1A507B1E6C426600AA55FB /* SpeechService.swift */,
 				6D1A50901E6C490600AA55FB /* SpeechSynthesizer.swift */,
-				6DF970311E7591F10050F0B9 /* NLEngine.swift */,
-				6DF970331E75954E0050F0B9 /* Context.swift */,
-				6DF970351E759A1A0050F0B9 /* Emotion.swift */,
+				6DF970391E7EC7B30050F0B9 /* LanguageEngine.swift */,
+				6DF9703B1E7EC82F0050F0B9 /* AwsLanguageEngine.swift */,
+				6DF9703D1E7ED5AF0050F0B9 /* SpeechEvaluator.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -105,6 +143,11 @@
 		6D1A50921E6C842000AA55FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DF9704D1E7EF3210050F0B9 /* AWSCognito.framework */,
+				6DF9704E1E7EF3210050F0B9 /* AWSCore.framework */,
+				6DF9704F1E7EF3210050F0B9 /* AWSMachineLearning.framework */,
+				6DF970501E7EF3210050F0B9 /* AWSPolly.framework */,
+				6DF970371E7EB8450050F0B9 /* Alamofire.framework */,
 				6D1A50931E6C842000AA55FB /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -163,6 +206,9 @@
 				6D7AA0821E47649E0050F200 /* Sources */,
 				6D7AA0831E47649E0050F200 /* Frameworks */,
 				6D7AA0841E47649E0050F200 /* Resources */,
+				6DF970591E7EF3210050F0B9 /* Embed Frameworks */,
+				6DF9705A1E7EF3C20050F0B9 /* ShellScript */,
+				6DF9705D1E7EF4BC0050F0B9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DF9705A1E7EF3C20050F0B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "Shell /bin/sh\n\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"\n\nShow environment variables in build log: Checked\nRun script only when installing: Not checked\n\nInput Files: Empty\nOutput Files: Empty";
+		};
+		6DF9705D1E7EF4BC0050F0B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n${PROJECT_DIR}/Carthage/Build/iOS/Alamofire.framework";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D7AA0821E47649E0050F200 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -259,13 +334,13 @@
 			files = (
 				6D1A507C1E6C426600AA55FB /* SpeechService.swift in Sources */,
 				6D7AA08C1E47649E0050F200 /* MainView.swift in Sources */,
+				6DF9703C1E7EC82F0050F0B9 /* AwsLanguageEngine.swift in Sources */,
 				6D1A507A1E6C406C00AA55FB /* Vocabulary.swift in Sources */,
 				6D1A50781E6C3A6F00AA55FB /* MainController.swift in Sources */,
+				6DF9703E1E7ED5AF0050F0B9 /* SpeechEvaluator.swift in Sources */,
 				6D7AA08A1E47649E0050F200 /* AppDelegate.swift in Sources */,
-				6DF970361E759A1A0050F0B9 /* Emotion.swift in Sources */,
-				6DF970341E75954E0050F0B9 /* Context.swift in Sources */,
+				6DF9703A1E7EC7B30050F0B9 /* LanguageEngine.swift in Sources */,
 				6D1A50911E6C490600AA55FB /* SpeechSynthesizer.swift in Sources */,
-				6DF970321E7591F10050F0B9 /* NLEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +483,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5TSEUCR9ZQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = elokat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elokat;
@@ -424,6 +503,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 5TSEUCR9ZQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = elokat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elokat;

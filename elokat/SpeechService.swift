@@ -11,7 +11,8 @@ import AVFoundation
 
 class SpeechService {
     
-    private let nlEngine = NLEngine()
+    private let languageEngine = AwsLanguageEngine()
+    private let speechEvaluator = SpeechEvaluator()
     private let vocabulary = Vocabulary()
     private let speechSynthesizer = SpeechSynthesizer()
     
@@ -24,8 +25,9 @@ class SpeechService {
         }
         
         if(!intentMatched) {
-            let response = nlEngine.getResponse(input: text)
-            speechSynthesizer.speak(text: response, audioSession: audioSession)
+            languageEngine.getResponse(input: text) { (response) in
+                self.speechSynthesizer.speak(text: self.speechEvaluator.generateResponse(input: response), audioSession: audioSession)
+            }
         }
     }
     
