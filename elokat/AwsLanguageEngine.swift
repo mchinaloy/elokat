@@ -13,7 +13,7 @@ import AWSMachineLearning
 
 class AwsLanguageEngine: LanguageEngine {
 
-    private let modelId = "xxxxx"
+    private let modelId = "ml-MJ8z7grvcS0"
     private let endpoint = "https://realtime.machinelearning.eu-west-1.amazonaws.com"
     
     func getResponse(input: String, completion: @escaping (String) -> Void) {

@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Initialize the Amazon Cognito credentials provider
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.EUWest1,
-                                                                identityPoolId:"xxxxxx")
+                                                                identityPoolId:"eu-west-1:99b6b52b-fdf9-410b-a394-4b96afbc8aac")
         let configuration = AWSServiceConfiguration(region:.EUWest1, credentialsProvider:credentialsProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
         
