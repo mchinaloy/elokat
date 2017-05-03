@@ -61,7 +61,7 @@ class MainController: NSObject, SFSpeechRecognizerDelegate {
                 self.recognitionTask = nil
             }
         
-            try audioSession.setCategory(AVAudioSessionCategoryRecord)
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.defaultToSpeaker)
             try audioSession.setMode(AVAudioSessionModeMeasurement)
             try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
         

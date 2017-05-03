@@ -22,9 +22,9 @@ class SpeechSynthesizer: NSObject, AVSpeechSynthesizerDelegate {
     func speak(text: String, audioSession: AVAudioSession) {
         do {
             print("Starting to speak, setting mode to Playback")
-            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
         } catch{
-            print("An error occurred whilst trying to set audio session category")
+            print("An error occurred whilst trying to set audio session category: \(error)")
         }
         self.audioSession = audioSession
         synth.stopSpeaking(at: AVSpeechBoundary.immediate)
@@ -39,7 +39,7 @@ class SpeechSynthesizer: NSObject, AVSpeechSynthesizerDelegate {
             print("Stopped speaking, setting mode to Record")
             try audioSession.setCategory(AVAudioSessionCategoryRecord)
         } catch {
-            print("An error occurred whilst trying to set audio session category")
+            print("An error occurred whilst trying to set audio seion category")
         }
     }
     
